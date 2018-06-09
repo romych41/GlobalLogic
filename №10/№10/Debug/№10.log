@@ -1,0 +1,3 @@
+﻿  main.c
+c:\users\romych\desktop\glogic\№10\№10\main.c(96): warning C4013: getch: нет определения; предполагается "extern" с возвратом типа "int"
+  №10.vcxproj -> C:\Users\Romych\Desktop\GLogic\№10\Debug\№10.exe
