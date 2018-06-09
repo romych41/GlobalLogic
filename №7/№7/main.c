@@ -1,25 +1,18 @@
 #include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
-void InputData(int*, int*);
 void LenghtCalc(int*, int*, int*, int*);
 void OutputData(int*, int*);
 
-int main()
+int main(int argc, char **argv)
 {
 	int d, n, lenght = 0, countOfOperation = 0;
-	InputData(&d, &n);
+	n = atoi(argv[1]);
+	d = atoi(argv[2]);
 	LenghtCalc(&d, &n, &lenght, &countOfOperation);
 	OutputData(&lenght, &countOfOperation);
-	getch();
 	return 0;
-}
-
-void InputData(int *d, int *n)
-{
-	printf("Input the lenght between the sensors: ");
-	scanf_s("%d", d);
-	printf("Input the number of sensors: ");
-	scanf_s("%d", n);
 }
 
 void LenghtCalc(int *d, int *n, int *lenght, int *countOfOperation)//The complexity of the algorithm is O(2N)
